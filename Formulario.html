@@ -3,34 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <title>Acceso al Mundo del Mate</title>
-  <link rel="stylesheet" href="CSS/estilos.css">
-  <link rel="website icon" type="png"
-    href="c:\Users\lucca\Downloads\mate.png">
-  
+  <link rel="stylesheet" href="CSS/estilosFormulario.css">
+  <link rel="website icon" type="png" href="c:\Users\lucca\Downloads\mate.png">
 </head>
 <body>
   <section>
-    <div class="form-container"></div>
+    <div class="form-container">
       <h1>Login form</h1>
-      <form action="#">
+      <form action="index.html">
         <div class="control">
-          <label for="name">Nombre</label>
-          <input type="text" name="Nombre" id="Nombre">
+          <label for="Nombre">Nombre</label>
+          <input type="text" name="Nombre" id="Nombre" required>
         </div>
         <div class="control">
-          <label for="pws">Contraseña</label>
-          <input type="Contraseña" name="pws" id="psw">
+          <label for="psw">Contraseña</label>
+          <input type="password" name="psw" id="psw" required>
         </div>
-        <span><input type="checkbox"> Recuerdame. </span>
+        <span><input type="checkbox"> Recuérdame. </span>
         <div class="control">
           <input type="submit" value="Enviar">
         </div>
       </form>
       <div class="link">
-        <a href="#">¿Olvidaste tu Contraseña?</a>
+        <a href="#">¿Olvidaste tu contraseña?</a>
       </div>
-
+    </div>
   </section>
-
 </body>
 </html>
+
