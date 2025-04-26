@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Tipos de Yerba Mate</title>
+  <link rel="icon" type="image/png" href="mateicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: white;
+      font-family: "Bebas Neue", sans-serif;
+      color: black;
+      margin-top: 100px;
+      padding: 0;
+    }
+
+    .barra-superior {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: #427841;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 40px;
+      height: 60px;
+      z-index: 1000;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .titulo {
+      font-size: 2rem;
+      color: white;
+    }
+
+    .enlaces-principales ul {
+      list-style-type: none;
+      display: flex;
+      gap: 40px;
+      padding: 0;
+      margin: 0;
+    }
+
+    .enlaces-principales a {
+      text-decoration: none;
+      color: white;
+      font-size: 1.2rem;
+      padding: 5px 10px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .enlaces-principales a:hover {
+      background-color: #7c7c7c;
+      color: white;
+    }
+
+    nav {
+      background-color: #427841;
+      padding: 10px;
+      border-radius: 2px;
+      margin: 20px 0;
+    }
+
+    nav h2 {
+      color: #ffffff;
+    }
+
+    nav ul {
+      justify-content: center;
+    }
+
+    nav li {
+      margin: 10px 15px;
+      list-style-type: none;
+    }
+
+    nav a {
+      color: #ffffff;
+      padding: 3px 5px;
+      border-radius: 1px;
+      transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #427841;
+      text-decoration: none;
+    }
+
+    .yerba {
+      color: black;
+      background-color: beige;
+      margin: 20px auto;
+      padding: 20px;
+      max-width: 700px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .yerba:hover {
+      transform: scale(1.02);
+    }
+
+    .yerba h2 {
+      text-align: center;
+      color: beige;
+    }
+
+    .yerba p,
+    .yerba ul {
+      color: #000000;
+    }
+
+    .yerba img {
+      display: block;
+      margin: 10px auto;
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    footer {
+      background-color: #427841;
+      color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    footer ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      margin: 15px 0;
+      gap: 20px;
+      padding: 0;
+    }
+
+    footer ul li a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: #32be45;
+      box-shadow: 6px 6px 12px #30b138, -6px -6px 12px #0ea618;
+      transition: all 0.3s ease;
+    }
+
+    footer ul li a:hover {
+      box-shadow: inset 4px 4px 8px #0c5b1a, inset -4px -4px 8px #0e6e14;
+      transform: scale(0.95);
+      text-decoration: none !important;
+    }
+
+    footer ul li a i {
+      font-size: 20px;
+      color: #fff;
+      transition: all 0.3s ease;
+    }
+
+    footer ul li a:hover i {
+      transform: scale(1.2);
+      box-shadow: inset 4px 4px 8px #117b25, inset -4px -4px 8px #0e6e14;
+      text-decoration: none;
+    }
+
+    .galeria {
+      text-align: center;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 700px;
+      box-shadow: 6px 2px 4px rgba(0, 0, 0, 0.1);
+      background-color: beige;
+      margin: 20px auto;
+    }
+
+    .imagenes {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .imagenes img {
+      width: 200px;
+      height: auto;
+      border-radius: 15px;
+      transition: transform 0.3s;
+    }
+
+    .imagenes img:hover {
+      transform: scale(1.03);
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav li {
+        margin: 5px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="barra-superior">
+    <h1 class="titulo">Mate.arg</h1>
+    <nav class="enlaces-principales">
+      <ul>
+        <li><a href="Index.html">Inicio</a></li>
+        <li><a href="metodosdemate.html">Preparacion</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="yerba">
+    <h2 style="color: black;">Yerba con palo 🌿🪵</h2>
+    <img src="IMG/ypalo.png" alt="Yerba con palo">
+    <p>Es la más común. Tiene hojas secas, trituradas y parte de los palitos. Corresponde al tallo de la planta de yerba
+      mate, triturado en forma de palitos. Éstos no le aportan mayor sabor a la infusión, pero sí ayudan a su
+      presentación y suavidad.</p>
+  </div>
+
+  <div class="yerba">
+    <h2 style="color: black;">Yerba sin palo 🌿</h2>
+    <img src="IMG/yerbasinpalo.png" alt="Yerba sin palo">
+    <p>La yerba sin palo está compuesta casi exclusivamente por hojas secas y trituradas, sin incluir los palos. Esta
+      característica le da un sabor más intenso y amargo en comparación con la yerba con palo. Es ideal para quienes
+      prefieren un mate más fuerte y duradero.</p>
+  </div>
+  <hr>
+  <div class="yerba">
+    <h2 style="color: black;">Yerba compuesta 🌿🍃</h2>
+    <img src="IMG/myy.png" alt="Yerba compuesta">
+    <p>La yerba compuesta es una mezcla de yerba mate con distintas hierbas naturales, como menta, boldo, cedrón,
+      manzanilla, entre otras. Estas combinaciones no solo aportan sabores diferentes, sino también propiedades
+      digestivas, relajantes o energizantes.</p>
+  </div>
+  <hr style="margin: 60px auto; border: 2px solid #4CAF50; width: 80%;">
+  <section class="galeria">
+    <h2>MOMENTOS MATEROS</h2>
+    <div class="imagenes">
+      <img src="IMG/mateestudio.jpg" alt="Mate 1">
+      <img src="IMG/relax.jpeg.jpg" alt="Mate 2">
+      <img src="IMG/mateviaje.jpg" alt="Mate 3">
+    </div>
+  </section>
+  <hr style="margin: 60px auto; border: 2px solid #4CAF50; width: 80%;">
+  <footer>
+    <p>Hecho por estudiantes de primer año - Proyecto Web - UADE</p>
+    <p>Seguinos en nuestras redes:</p>
+    <ul>
+      <li><a href="https://www.tiktok.com"><i class="fa-brands fa-tiktok"></i></a></li>
+      <li><a href="https://twitter.com"><i class="fa-brands fa-x-twitter"></i></a></li>
+      <li><a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a></li>
+      <li><a href="https://www.whatsapp.com"><i class="fa-brands fa-whatsapp"></i></a></li>
+    </ul>
+    <p>Contacto: <a href="mailto:contacto@mate.com">contacto@mate.com</a></p>
+  </footer>
+
+</body>
+
+</html>
