@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Registro - Mate.arg</title>
+  <link rel="stylesheet" href="../CSS/estilosFormulario.css">
+  <link rel="icon" type="image/png" href="IMG/Iconomate.png">
+  <link rel="website icon" type="png" href="c:\Users\lucca\Downloads\mate.png">
+</head>
+
+<body>
+  <section>
+    <div class="form-container">
+      <h1>Crear Cuenta</h1>
+
+      <!-- Formulario de Registro -->
+      <form id="registroForm">
+        <div class="control">
+          <label for="nombre">Nombre</label>
+          <input type="text" name="nombre" id="nombre" required>
+        </div>
+        <div class="control">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required>
+        </div>
+        <div class="control">
+          <label for="password">Contraseña</label>
+          <input type="password" name="password" id="password" required>
+        </div>
+        <div class="control">
+          <label for="confirmPassword">Confirmar Contraseña</label>
+          <input type="password" name="confirmPassword" id="confirmPassword" required>
+        </div>
+        <div class="control">
+          <input type="submit" value="Registrarse">
+        </div>
+      </form>
+      
+      <!-- Mensaje de error -->
+      <div id="mensajeError" style="color: red; margin-top: 10px;"></div>
+
+      <!-- Link para ir al login -->
+      <div class="link">
+        <p>¿Ya tienes una cuenta? <a href="login.html">Inicia sesión aquí</a></p>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // Código para el formulario de REGISTRO
+    const registroForm = document.getElementById('registroForm');
+    const mensajeError = document.getElementById('mensajeError');
+
+    registroForm.addEventListener('submit', function(event) {
+      event.preventDefault(); // Evita que se envíe el formulario antes de que se haya completado
+
+      const nombre = registroForm.nombre.value.trim(); // trim elimina espacios al principio y al final
+      const email = registroForm.email.value.trim();
+      const password = registroForm.password.value;
+      const confirmPassword = registroForm.confirmPassword.value;
+
+      mensajeError.textContent = '';
+
+      if (nombre.length < 3) {
+        mensajeError.textContent = 'El nombre debe tener al menos 3 caracteres.';
+        return;
+      }
+
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email)) {
+        mensajeError.textContent = 'El correo electrónico no es válido.';
+        return;
+      }
+
+      if (password.length < 6) {
+        mensajeError.textContent = 'La contraseña debe tener al menos 6 caracteres.';
+        return;
+      }
+
+      if (password !== confirmPassword) {
+        mensajeError.textContent = 'Las contraseñas no coinciden.';
+        return;
+      }
+
+      // Si todo está correcto, simular registro exitoso
+      alert('¡Registro exitoso! Serás redirigido a la página principal.');
+      
+      // Redirigir a index.html después del registro exitoso
+      window.location.href = "index.html";
+    });
+  </script>
+</body>
+
+</html>

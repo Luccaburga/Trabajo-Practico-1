@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: white;
+      font-family: "Bebas Neue", sans-serif;
+      color: black;
+      margin-top: 20px;
+      padding: 0;
+    }
+
+    .barra-superior {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: #427841;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 40px;
+      height: 60px;
+      z-index: 1000;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .titulo {
+      font-size: 2rem;
+      color: white;
+    }
+
+    .enlaces-principales ul {
+      list-style-type: none;
+      display: flex;
+      gap: 40px;
+      padding: 0;
+      margin: 0;
+    }
+
+    .enlaces-principales a {
+      text-decoration: none;
+      color: white;
+      font-size: 1.2rem;
+      padding: 5px 10px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .enlaces-principales a:hover {
+      background-color: #7c7c7c;
+      color: white;
+    }
+
+    .imagen-con-texto {
+  width: 100%;
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+  background: url("../IMG/IMGrande.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+    .texto-centrado {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 2.5rem;
+      font-weight: bold;
+      text-align: center;
+      color: white;
+      text-shadow: 2px 2px 4px #000;
+    }
+
+    .contenedor-tienda {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .productos {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 40px;
+    }
+
+    .producto {
+      background-color: beige;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      min-width: 280px;
+      max-width: 350px;
+      transition: transform 0.3s ease;
+    }
+
+    .producto:hover {
+      transform: scale(1.02);
+    }
+
+    .producto img {
+      width: 100%;
+      max-width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .producto h3 {
+      color: #427841;
+      margin-bottom: 10px;
+      font-size: 1.5rem;
+    }
+
+    .precio {
+      font-size: 1.3rem;
+      color: #8B4513;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .botones-cantidad {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+
+    .btn-cantidad {
+      background-color: #427841;
+      color: white;
+      border: none;
+      width: 30px;
+      height: 30px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1.2rem;
+      transition: background-color 0.3s;
+    }
+
+    .btn-cantidad:hover {
+      background-color: #2d5a2d;
+    }
+
+    .cantidad {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #427841;
+      min-width: 30px;
+      text-align: center;
+    }
+
+    .seccion-bombilla {
+      background-color: #f0f8f0;
+      border-radius: 15px;
+      padding: 25px;
+      margin: 30px auto;
+      max-width: 600px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .checkbox-bombilla {
+      margin: 15px 0;
+    }
+
+    .checkbox-bombilla input[type="checkbox"] {
+      transform: scale(1.5);
+      margin-right: 10px;
+    }
+
+    .checkbox-bombilla label {
+      font-size: 1.2rem;
+      color: #427841;
+      font-weight: bold;
+    }
+
+    .resumen-compra {
+      background-color: #427841;
+      color: white;
+      border-radius: 15px;
+      padding: 25px;
+      margin: 30px auto;
+      max-width: 600px;
+      text-align: center;
+    }
+
+    .resumen-compra h3 {
+      margin-bottom: 20px;
+      font-size: 1.8rem;
+    }
+
+    .detalle-compra {
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      padding: 15px;
+      margin: 15px 0;
+      text-align: left;
+    }
+
+    .total-final {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #FFD700;
+      margin-top: 20px;
+      padding: 15px;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+    }
+
+    .btn-calcular {
+      background-color: #8B4513;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1.3rem;
+      border-radius: 10px;
+      cursor: pointer;
+      margin: 20px 10px;
+      transition: background-color 0.3s;
+    }
+
+    .btn-calcular:hover {
+      background-color: #6B3300;
+    }
+
+    footer {
+      background-color: #427841;
+      color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    footer ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      margin: 15px 0;
+      gap: 20px;
+      padding: 0;
+    }
+
+    footer ul li a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: #32be45;
+      box-shadow: 6px 6px 12px #30b138, -6px -6px 12px #0ea618;
+      transition: all 0.3s ease;
+    }
+
+    footer ul li a:hover {
+      box-shadow: inset 4px 4px 8px #0c5b1a, inset -4px -4px 8px #0e6e14;
+      transform: scale(0.95);
+      text-decoration: none;
+    }
+
+    footer ul li a i {
+      font-size: 20px;
+      color: #fff;
+      transition: all 0.3s ease;
+    }

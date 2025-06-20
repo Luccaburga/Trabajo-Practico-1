@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Tienda - Mate.arg</title>
+  <link rel="icon" type="image/png" href="../IMG/Iconomate.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="../CSS/EstilosMatesvendidos.css">
+
+</head>
+
+<body>
+  <header class="barra-superior">
+    <h1 class="titulo">Mate.arg</h1>
+    <nav class="enlaces-principales">
+      <ul>
+        <li><a href="Index.html">Inicio</a></li>
+        <li><a href="metodosdemate.html">Preparacion</a></li>
+        <li><a href="matear.html">Tipos de Yerba</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="imagen-con-texto">
+      <div class="texto-centrado">
+        <h1 class="titulo">🧉 Tienda de Mates 🧉</h1>
+      </div>
+    </section>
+
+    <div class="contenedor-tienda">
+      <div class="productos">
+        <!-- Mate de Calabaza -->
+        <div class="producto">
+          <img src="../IMG/Matecalabaza.png" alt="Mate de Calabaza">
+          <h3>Mate de Calabaza</h3>
+          <div class="precio">$30.000</div>
+          <div class="botones-cantidad">
+            <button class="btn-cantidad" id="btnMenos1">-</button>
+            <span class="cantidad" id="cantidadCalabaza">0</span>
+            <button class="btn-cantidad" id="btnMas1">+</button>
+          </div>
+        </div>
+
+        
+        <div class="producto">
+          <img src="../IMG/MateAcero.jpeg" alt="Mate de Acero">
+          <h3>Mate de Acero Inoxidable</h3>
+          <div class="precio">$40.000</div>
+          <div class="botones-cantidad">
+            <button class="btn-cantidad" id="btnMenos2">-</button>
+            <span class="cantidad" id="cantidadAcero">0</span>
+            <button class="btn-cantidad" id="btnMas2">+</button>
+          </div>
+        </div>
+
+        <!-- Mate de Silicona -->
+        <div class="producto">
+          <img src="../IMG/matesilicona.webp" alt="Mate de Silicona">
+          <h3>Mate de Silicona</h3>
+          <div class="precio">$5.000</div>
+          <div class="botones-cantidad">
+            <button class="btn-cantidad" id="btnMenos3">-</button>
+            <span class="cantidad" id="cantidadSilicona">0</span>
+            <button class="btn-cantidad" id="btnMas3">+</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sección Bombilla -->
+      <div class="seccion-bombilla">
+        <h3>🥄 Añade una Bombilla a tu compra</h3>
+        <div class="checkbox-bombilla">
+          <input type="checkbox" id="bombilla" name="bombilla">
+          <label for="bombilla">Bombilla de Acero Inoxidable - $5.500</label>
+        </div>
+      </div>
+
+      <!-- Botones de acción -->
+      <div style="text-align: center;">
+        <button class="btn-calcular" id="btnCalcular">Calcular Total</button>
+        <button class="btn-calcular" id="btnLimpiar">Limpiar Compra</button>
+      </div>
+
+      <!-- Resumen de compra -->
+      <div class="resumen-compra" id="resumenCompra" style="display: none;">
+        <h3>📋 Resumen de tu Compra</h3>
+        <div class="detalle-compra" id="detalleCompra"></div>
+        <div class="total-final" id="totalFinal"></div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>Hecho por estudiantes de primer año - Proyecto Web - UADE</p>
+    <p>Seguinos en nuestras redes:</p>
+    <ul>
+      <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+    </ul>
+    <p>Contacto: <a href="mailto:contacto@mate.com">contacto@mate.com</a></p>
+  </footer>
+
+<script src="../JavaScript/VentasMates.js"></script>
+</body>
+
+</html>
